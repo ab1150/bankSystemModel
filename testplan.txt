@@ -1,0 +1,22 @@
+Testplan.txt by Augustus Chang and Anushiya Balakrishnan
+
+
+
+We created our bank-testcases.txt to be executed sequentially, in order. So that will take you from creating an account, to closing it, and all of the errors and messages in between. 
+
+If you are using different machines for the server, please make sure that the server machine is not masked by the network. Any machine connecting over RUWireless will be masked. There is an exception to this, which are the ilab machines ( I believe). So you can create a server over the ilab machines. For our examples, we just used local host in the command line argument.
+
+We choose port 9002 as our server. We hard-coded this into both programs and am assuming that no other group used the same port since there are around 9000 ports to choose from. And the odds of running the program at the same time as another TA is very slim.
+
+This was mentioned in the bank-testcases.txt, but when restarting the server, if you get a message saying
+		ERROR: SERVER COULD NOT BE CREATED: Address already in use
+It most likely does not mean another person is using the address. This might comes up if you shut down the server and restart it immediately. The server process still believes the address to be occupied since the latency between shutting down the server and reopening it is long. Please wait a few seconds until the machine realizes the address is free to use again.
+
+If the client seems slow, it is because commands are throttled to simulate the time it would actually take (as the assignment requested). We promise its not because its actually slow!
+
+
+Thanks!
+	
+
+
+		
